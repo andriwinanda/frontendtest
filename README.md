@@ -67,3 +67,37 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+
+## Deploy to Heroku
+### install Heroku CLI
+Install the Heroku CLI
+Download and install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-command-line).
+
+If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
+```bash
+$ heroku login
+```
+### Create a new Git repository
+Initialize a git repository in a new or existing directory
+
+```bash
+$ cd my-project/
+$ git init
+$ heroku git:remote -a frontend-test-andri
+```
+### Deploy your application
+Commit your code to the repository and deploy it to Heroku using Git.
+
+```bash
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+```
+You can now change your main deploy branch from "master" to "main" for both manual and automatic deploys, please follow the instructions here.
+
+### Existing Git repository
+For existing repositories, simply add the heroku remote
+
+```bash
+$ heroku git:remote -a frontend-test-andri
+```
