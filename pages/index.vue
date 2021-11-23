@@ -3,6 +3,7 @@
     <Header/>
     <WelcomeBanner/>
     <Tutorial />
+    <Footer/>
   </div>
 </template>
 

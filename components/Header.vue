@@ -11,7 +11,7 @@
           <a :href="item.url" class="px-3 hover:text-gray-400">
             {{ item.title }}
           </a>
-          <span v-if="item.badge" class="absolute bottom-5 right-0  px-2 py-1 text-xs leading-none text-red-100 bg-red-600 rounded-full"><small>{{item.badge}}</small></span>
+          <span v-if="item.badge" class="absolute bottom-5 right-0  px-2 py-1 text-xs leading-none text-red-100 bg-red-500 rounded-full"><small>{{item.badge}}</small></span>
         </div>
       </div>
       <div class="lg:w-1/5 w-1/2 align-middle block text-right">
