@@ -1,4 +1,6 @@
+import { join } from 'path'
 export default {
+  target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'frontendtest',
@@ -22,6 +24,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -51,7 +54,7 @@ export default {
       }
     }
   },
-  
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
@@ -66,8 +69,9 @@ export default {
     transpile: ['vee-validate'],
     postcss: {
       plugins: {
-        "postcss-custom-properties": false
-      },
-    },
+        "postcss-custom-properties": false,
+        tailwindcss: join(__dirname, 'tailwind.config.js'),
+      }
+    }
   }
 }

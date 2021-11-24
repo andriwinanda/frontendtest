@@ -8,7 +8,8 @@
     <swiper class="swiper ml-4 lg:ml-12" :options="swiperOption">
       <swiper-slide v-for="(item, i) in slideData" :key="i">
         <div
-          :class="`swiper__slide__wrapper p-10 bg-${item.theme}-200 text-center rounded-lg transform`"
+          :style="`background-color: ${item.theme}`"
+          :class="`swiper__slide__wrapper p-10 text-center rounded-lg transform`"
         >
           <img class="mx-auto w-14 h-14" :src="`../${item.image}`" alt="" />
           <h2 class="font-bold pt-2">{{ item.title }}</h2>
@@ -46,37 +47,37 @@ export default {
     return {
       slideData: [
         {
-          theme: "primary",
+          theme: "#F0FEEB",
           image: "cupcake.png",
           title: "Cupcakes",
           stock: 22,
         },
         {
-          theme: "teal",
+          theme: "#E6F3F5",
           image: "pizza.png",
           title: "Pizza",
           stock: 25,
         },
         {
-          theme: "blue",
+          theme: "#EAEEFA",
           image: "kebab.png",
           title: "Kebab",
           stock: 12,
         },
         {
-          theme: "raspberry",
+          theme: "#F9EEF3",
           image: "salmon.png",
           title: "Salmon",
           stock: 22,
         },
         {
-          theme: "lime",
+          theme: "#F3F7D9",
           image: "doughnut.png",
           title: "Doughnut",
           stock: 11,
         },
         {
-          theme: "primary",
+          theme: "#F0FEEB",
           image: "cupcake.png",
           title: "Cupcakes",
           stock: 22,

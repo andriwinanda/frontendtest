@@ -2,7 +2,7 @@
   <div class="flex space-x-1">
     <div v-for="item in 5" :key="item">
       <span
-        :class="`text-${item <= stars ? 'yellow-500' : 'gray-400'}`"
+        :class="`${item <= stars ? 'text-yellow-500' : 'text-gray-400'}`"
       >
         <svg width="16" height="20" fill="currentColor">
           <path
