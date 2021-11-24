@@ -1,12 +1,15 @@
 <template>
   <div>
-    <Header/>
-    <WelcomeBanner/>
-    <Tutorial />
-    <Footer/>
+    <Header />
+    <WelcomeBanner />
+    <Slider />
+    <Trending />
+    <Toolbar />
+    <Footer />
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+};
 </script>

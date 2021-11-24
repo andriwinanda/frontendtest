@@ -1,7 +1,7 @@
 <template>
   <button href="#"
     :class="[
-      `inline-block text-sm px-4 py-2 border bg-${color}-${light? '200':'500'} text-${color}-${light? '500':'200'} hover:border-transparent focus:outline-none`,
+      `inline-block text-sm px-4 py-2 border bg-${color}-${light? '200':'500'} text-${color}-${light? '500':'200'} hover:border-transparent hover:shadow-lg focus:outline-none`,
       { 'rounded-full': rounded },
     ]"
   >

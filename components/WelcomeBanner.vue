@@ -23,7 +23,10 @@
             src="../static/meals.png"
             alt=""
           />
-          <Rating :rating="rating" class="absolute bottom-8 lg:-bottom-48 right-3 lg:right-48" />
+          <Rating
+            :rating="rating"
+            class="absolute bottom-8 lg:-bottom-48 right-3 lg:right-48"
+          />
         </div>
         <div class="w-full lg:w-2/5">
           <p class="text-gray-500 pb-5">
@@ -40,18 +43,17 @@
 </template>
 <script>
 export default {
-  data(){
-    return{
+  data() {
+    return {
       rating: {
-        imageUrl: 'meals.png',
-        title: 'Green Salad Tomato',
-        category: 'Tomato',
-        rating: 4
-
-      }
-    }
-  }
-}
+        imageUrl: "meals.png",
+        title: "Green Salad Tomato",
+        category: "Tomato",
+        stars: 4,
+      },
+    };
+  },
+};
 </script>
 <style lang="scss" scoped>
 .welcome-banner {
@@ -64,8 +66,8 @@ export default {
     height: 100%;
     opacity: 0.05;
     z-index: -1;
-    background-size: 200%;
-    background: url("../static/background.png");
+    background-size: 50%;
+    background-image: url("../static/background.png");
   }
   .welcome-banner__img {
     border: 30px solid rgba(0, 0, 0, 0.05);

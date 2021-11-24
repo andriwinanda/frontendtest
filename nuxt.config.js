@@ -31,6 +31,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+
+    "@nuxtjs/google-fonts"
   ],
 
   tailwindcss: {
@@ -39,6 +41,15 @@ export default {
     exposeConfig: false,
     config: {},
     injectPosition: 0,
+  },
+
+  googleFonts: {
+    display: "swap",
+    families: {
+      Rubik: {
+        wght: [100, 200, 300, 400, 500, 600, 700, 800, 900]
+      }
+    }
   },
   
   // Modules: https://go.nuxtjs.dev/config-modules

@@ -1,7 +1,7 @@
 <template>
-  <footer class="container mx-auto px-4">
+  <footer class="container mx-auto px-4 hidden lg:block">
     <div class="flex bg-primary-100 rounded-lg p-14 space-x-4">
-      <div class="lg:w-2/5 w-1/2 mr-6 space-y-8">
+      <div class="lg:w-2/5 space-y-8">
         <img src="../static/logo-elemes.png" alt="" />
         <p class="text-gray-500">
           Jl. Prof. DR. Satrio No.7, RT.3/RW.3, Karet Kuningan, Kecamatan
@@ -94,7 +94,7 @@
           </a>
         </div>
       </div>
-      <div class="lg:w-1/5 w-1/2 items-center mr-6 space-y-8">
+      <div class="lg:w-1/5 items-center space-y-8">
         <h2 class="text-xl font-semibold text-black">Categories</h2>
         <ul class="text-gray-500 space-y-2">
           <li><a href="#">Cupcake</a></li>
@@ -104,7 +104,7 @@
           <li><a href="#">Dougnut</a></li>
         </ul>
       </div>
-      <div class="lg:w-1/5 w-1/2 items-center mr-6 space-y-8">
+      <div class="lg:w-1/5 items-center space-y-8">
         <h2 class="text-xl font-semibold text-black">About Us</h2>
         <ul class="text-gray-500 space-y-2">
           <li><a href="#">About Us</a></li>
@@ -112,7 +112,7 @@
           <li><a href="#">Report Problem</a></li>
         </ul>
       </div>
-      <div class="lg:w-1/5 w-1/2 items-center mr-6 space-y-8">
+      <div class="lg:w-1/5 items-center space-y-8">
         <h2 class="text-xl font-semibold text-black">Newsletter</h2>
         <p class="text-sm">
           Get now 50% discount for all products on your first order
@@ -120,9 +120,9 @@
         <form class="relative">
           <input
             class="
-              focus:border-light-blue-500
+              focus:border-primary-500
               focus:ring-1
-              focus:ring-light-blue-500
+              focus:ring-primary-500
               focus:outline-none
               w-full
               text-sm text-black
@@ -130,7 +130,7 @@
               border border-gray-200
               rounded-md
               py-2
-              pl-10
+              pl-2
             "
             type="text"
             aria-label="Filter projects"
