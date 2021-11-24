@@ -21,10 +21,10 @@
     <div class="container mx-auto p-4">
       <div class="text-right">
         <Button rounded color="primary" class="swiper-button-prev-custom">
-          <span class="nav__icon text-primary-500" /> Prev</Button
+          <span class="swiper__nav__icon text-primary-500" /> Prev</Button
         >
         <Button rounded color="primary" class="swiper-button-next-custom"
-          >Next <span class="nav__icon text-primary-500"
+          >Next <span class="swiper__nav__icon text-primary-500"
         /></Button>
       </div>
     </div>
@@ -129,7 +129,7 @@ export default {
         left: 0;
         width: 100%;
         height: 100%;
-        opacity: 0.05;
+        opacity: 0.08;
         z-index: -1;
         background-size: 120%;
         background-image: url("../static/background.png");
@@ -145,7 +145,7 @@ export default {
   font-family: swiper-icons;
   content: "next";
 }
-.nav__icon {
+.swiper__nav__icon {
   position: relative;
   width: 24px;
   height: 24px;

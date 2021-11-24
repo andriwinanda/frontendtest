@@ -110,7 +110,7 @@ export default {
         width: 100%;
         height: 100%;
         z-index: -1;
-        opacity: 0.05;
+        opacity: 0.08;
         background-size: 100%;
         background-image: url("../static/background.png");
       }
